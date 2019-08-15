@@ -97,7 +97,7 @@ jobs:
   - checkout: self
   
 
-  - script: echo "hello"
+  - script: echo "hello2"
     displayName: fastlane release_dev
     env:
       FASTLANE_PASSWORD: $(config)
