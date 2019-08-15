@@ -86,6 +86,19 @@ schedules:
     - master
   always: true
 jobs:
-  - job: 
-    steps:
-      - script: echo "Should be triggered from a push to my-app-repo2gda!"
+- job: "release_dev_app_to_testers"
+  pool:
+    vmImage: 'macOS-10.14'
+
+  variables:
+  - template: templates/agent-variables.yaml
+
+  steps:
+  - checkout: self
+  
+
+  - script: echo "hello"
+    displayName: fastlane release_dev
+    env:
+      FASTLANE_PASSWORD: $(config)
+
