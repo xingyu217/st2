@@ -1,0 +1,5 @@
+variables:
+- name: arch
+  value: x64
+- name: config
+  value: debug
