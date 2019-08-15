@@ -91,7 +91,7 @@ jobs:
     vmImage: 'macOS-10.14'
 
   variables:
-  - template: templates/agent-variables.yaml
+  - template: templates/agent-variables.yml
 
   steps:
   - checkout: self
